@@ -1,16 +1,15 @@
-# hermon-it-portfolio
-M365 - A place to show hands-on Microsoft 365, Intune, Windows Admin, Azure, and IT support projects
 👋 Hi, I’m Hermon — Modern Workplace & IT Support Engineer (Career Transitioner)
 
-I’m transitioning into IT after 30 years of hands-on technical experience, supported by solid certifications in modern Microsoft technologies.
+I’m transitioning into IT with a strong focus on Microsoft 365, Windows administration, troubleshooting, and automation.
+This portfolio showcases my hands-on lab work, configurations, and projects that demonstrate real-world IT skills.
 
 🎓 Certifications
 
-Microsoft Certified: MD-102 – Endpoint Administrator
+Microsoft MD-102 – Endpoint Administrator
 
-Microsoft Certified: MS-102 – Microsoft 365 Administrator
+Microsoft MS-102 – Microsoft 365 Administrator
 
-Microsoft Certified: MS-900 – Fundamentals (resit planned)
+Microsoft MS-900 – Fundamentals (resit planned)
 
 CompTIA ITF+
 
@@ -30,23 +29,23 @@ Security Hardening & Compliance
 
 🧪 My HomeLab Projects
 
-This portfolio shows my practical experience through lab work, documentation, and automation:
+This portfolio shows practical experience through lab work, documentation, and automation.
 
 Project	Description
-M365 Tenant Setup	Full tenant build, MFA, security policies, groups, mailflow
-Intune Endpoint Management	Device compliance, Autopilot, configuration profiles
+M365 Tenant Setup	Full tenant build: MFA, security policies, groups, mailflow rules
+Intune Endpoint Management	Compliance policies, Autopilot, configuration profiles
 Windows Server HomeLab	AD DS, DNS, DHCP, GPO, domain joins
 PowerShell Automation	Scripts for user management, license reporting, troubleshooting
-IT Support Playbooks	Real issue diagnosis, ticket workflows, troubleshooting guides
-Security Baselines	CA rules, BitLocker, Windows security configs
+IT Support Playbooks	Real troubleshooting workflows and support procedures
+Security Baseline	CA rules, BitLocker, Windows security configs, hardening
 🚀 My Goals
 
-Secure a role in IT Support / Microsoft 365 / Service Desk
+Secure a role in IT Support, Microsoft 365, or Service Desk
 
-Continue developing automation skills using PowerShell
+Continue improving PowerShell and automation skills
 
-Gain hands-on experience managing enterprise environments
+Gain deeper experience with enterprise M365 and Intune environments
 
-Also I am Learning to use The N8N.IO platform to create and test real time automations.
+📫 Contact
 
-If you’re a recruiter or hiring manager — feel free to reach out.
+https://www.linkedin.com/in/hermz100/
