@@ -12,6 +12,7 @@ The goal of this project is to show practical, hands-on experience with:
 
 This lab was built as part of my IT portfolio to demonstrate real-world endpoint management skills.
 
+
 ---
 
 ## Lab Objectives
