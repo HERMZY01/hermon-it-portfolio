@@ -1,3 +1,4 @@
+
 # Intune + Windows 11 + Hyper-V Lab
 
 ## Overview
@@ -21,7 +22,8 @@ Organizations use Intune + Entra ID to control devices, deploy apps, enforce pol
 - Microsoft Intune (Endpoint Manager)
 - Microsoft 365 Business Premium (license)
 
-## Architecture (high level)
+
+
 **Hyper-V VM** → **Entra ID Join** → **Intune MDM Enrollment** → **App Deployment (Edge)** → **Validation (edge://policy + Intune status)**
 
 ---
@@ -35,7 +37,7 @@ Organizations use Intune + Entra ID to control devices, deploy apps, enforce pol
 - Enabled TPM 2.0 (virtual TPM)
 
 **Evidence**
-- ![Windows 11 setup TPM requirement](Screenshot%202025-12-09%20211357.png)
+- ![Windows 11 setup TPM requirement
 
 ---
 
@@ -45,9 +47,7 @@ Organizations use Intune + Entra ID to control devices, deploy apps, enforce pol
 - Confirmed MDM user scope = **All**
 - Confirmed Intune license assignment for enrollment user
 
-**Evidence**
-- ![Tenant status in Intune](Screenshot%202025-12-13%20165701.png)
-- ![MDM user scope](Screenshot%202025-12-13%20175623.png)
+  
 
 ---
 
@@ -61,8 +61,7 @@ Organizations use Intune + Entra ID to control devices, deploy apps, enforce pol
 - Fixed by correcting license assignment to the enrolling user
 - Enrollment succeeded after license + MDM user scope were correct
 
-**Evidence**
-- ![Access work or school shows Entra ID and MDM connected](Screenshot%202025-12-13%20182540.png)
+-
 
 ---
 
@@ -72,9 +71,7 @@ Organizations use Intune + Entra ID to control devices, deploy apps, enforce pol
 - Assigned deployment as **Required** to the device/user group
 - Forced sync from device
 
-**Evidence**
-- ![Edge app properties and assignments](Screenshot%202025-12-14%20093236.png)
-- ![Edge policy verification page](Screenshot%202025-12-14%20095116.png)
+
 
 ---
 
