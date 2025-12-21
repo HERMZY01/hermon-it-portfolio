@@ -1,53 +1,46 @@
-
 # Intune + Windows 11 + Hyper-V Lab
 
 ## Overview
-This lab demonstrates how to deploy, enroll, and manage a Windows 11 virtual machine using Microsoft Intune and Microsoft Entra ID (Azure AD).
+This lab demonstrates the end-to-end deployment, enrollment, and management of a Windows 11 virtual machine using **Microsoft Intune** and **Microsoft Entra ID (Azure AD)**.
 
-The goal of this project is to show practical, hands-on experience with:
-- Windows 11 device enrollment
-- Microsoft Intune configuration
-- Microsoft Edge deployment via Intune
-- Hyper-V virtualization
-
-This lab was built as part of my IT portfolio to demonstrate real-world endpoint management skills.
-
+The project was built to showcase real-world endpoint management skills, including device enrollment, license troubleshooting, and application deployment in an enterprise-style environment.
 
 ---
 
 ## Lab Objectives
 - Create a Windows 11 virtual machine using Hyper-V
-- Enroll the VM into Microsoft Entra ID
-- Enable Intune MDM management
-- Resolve common Intune enrollment errors (0x80180018)
+- Enable TPM and Secure Boot for Windows 11 compatibility
+- Enroll the device into Microsoft Entra ID
+- Enable Microsoft Intune (MDM) management
+- Troubleshoot Intune enrollment errors
 - Deploy Microsoft Edge using Intune
-- Verify policy and app deployment on the device
+- Verify policy and application deployment on the endpoint
 
 ---
 
 ## Technologies Used
 - Windows 11 Enterprise (Evaluation)
-- Hyper-V (Windows 10/11 host)
-- Microsoft Intune
+- Hyper-V
 - Microsoft Entra ID (Azure AD)
-- Microsoft Edge (Windows catalog app)
+- Microsoft Intune
+- Microsoft 365 Business Premium
+- Microsoft Edge (Enterprise)
 
 ---
 
 ## Lab Architecture
-Host PC  
-→ Hyper-V  
-→ Windows 11 VM  
-→ Microsoft Entra ID  
-→ Microsoft Intune  
+- Host: Windows 10/11 with Hyper-V enabled
+- Guest VM: Windows 11 (Generation 2)
+- Identity: Microsoft Entra ID (Cloud-only)
+- Device Management: Microsoft Intune (MDM)
+- Application Deployment: Intune Windows app (Microsoft Edge)
 
 ---
 
-## Step-by-Step Summary
+## Implementation Summary
 
-### 1. Hyper-V Setup
-- Enabled Hyper-V on host machine
-- Created Generation 2 Windows 11 VM
+### 1. Windows 11 VM Deployment
+- Created a Generation 2 Hyper-V virtual machine
 - Enabled TPM and Secure Boot
 - Installed Windows 11 successfully
 
@@ -58,53 +51,44 @@ Host PC
 - Resolved enrollment error **0x80180018** by correcting license assignment
 
 ### 3. Device Enrollment
-- Connected VM to Work or School account
-- Successfully joined Entra ID
+- Connected VM to **Work or School account**
+- Successfully joined Microsoft Entra ID
 - Device appeared in Intune portal
 - Verified MDM connection on the VM
 
 ### 4. Application Deployment (Microsoft Edge)
-- Added **Microsoft Edge for Windows 10 and later**
-- Assigned app as **Required**
-- Synced device
-- Verified Edge presence and policy status via:
+- Added **Microsoft Edge for Windows 10 and later** via Intune
+- Assigned application as **Required**
+- Synced device from Intune
+- Verified Edge presence and policy status using:
   - `edge://policy`
 
 ---
 
 ## Validation & Evidence
-- Device visible in Intune portal
-- Microsoft Edge app assigned successfully
-- Device shows as Entra ID + MDM connected
-- Edge policies visible on VM
+- Device visible in Microsoft Intune
+- Device shows **Entra ID + MDM connected**
+- Microsoft Edge assigned successfully
+- Edge policies visible on the VM
 
 ---
 
 ## Skills Demonstrated
-- Endpoint Management (Intune)
-- Azure AD / Entra ID
-- Windows 11 administration
-- Virtualization (Hyper-V)
-- Troubleshooting enrollment & licensing issues
-- App deployment and validation
+- Windows 11 virtualization with Hyper-V
+- Microsoft Entra ID device join
+- Microsoft Intune MDM configuration
+- Troubleshooting Intune enrollment errors
+- Application deployment via Intune
+- Policy verification and validation
+- Enterprise endpoint management fundamentals
 
 ---
 
-## Why This Matters
-This lab mirrors real enterprise scenarios:
-- Corporate device onboarding
-- License misconfiguration troubleshooting
-- Cloud-managed Windows environments
+## Screenshots & Evidence
 
-It demonstrates job-ready skills for roles such as:
-- IT Support Engineer
-- Microsoft 365 Engineer
-- Endpoint Administrator
-- Junior Cloud Engineer
+> Screenshots are stored in this directory and referenced as evidence of successful deployment, enrollment, and policy application.
 
 ---
 
-## Author
-**Hermon Browne**  
-IT Support | Microsoft 365 | Intune | Windows  
-
+## Notes
+This lab was created as part of my IT portfolio to demonstrate hands-on experience with modern endpoint management and cloud identity solutions.
