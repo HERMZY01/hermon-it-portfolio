@@ -1,114 +1,109 @@
 # Intune + Windows 11 + Hyper-V Lab
 
 ## Overview
-This lab demonstrates the end-to-end deployment, enrollment, and management of a Windows 11 virtual machine using **Microsoft Intune** and **Microsoft Entra ID (Azure AD)**.
+This lab demonstrates how to deploy a Windows 11 VM in Hyper-V, join it to Microsoft Entra ID, enroll it into Microsoft Intune (MDM), and deploy Microsoft Edge via Intune.
 
-The project was built to showcase real-world endpoint management skills, including device enrollment, license troubleshooting, and application deployment in an enterprise-style environment.
-
----
+## Why this matters (real-world relevance)
+Organizations use Intune + Entra ID to control devices, deploy apps, enforce policies, and validate compliance. This lab mirrors a typical onboarding + management workflow used in modern IT teams.
 
 ## Lab Objectives
-- Create a Windows 11 virtual machine using Hyper-V
-- Enable TPM and Secure Boot for Windows 11 compatibility
-- Enroll the device into Microsoft Entra ID
-- Enable Microsoft Intune (MDM) management
-- Troubleshoot Intune enrollment errors
-- Deploy Microsoft Edge using Intune
-- Verify policy and application deployment on the endpoint
-
----
+- Build a Windows 11 VM using Hyper-V (TPM + Secure Boot)
+- Join device to Microsoft Entra ID (work/school)
+- Enable MDM enrollment into Microsoft Intune
+- Fix common enrollment error `0x80180018`
+- Deploy Microsoft Edge via Intune
+- Validate deployment and policy status on the device
 
 ## Technologies Used
-- Windows 11 Enterprise (Evaluation)
-- Hyper-V
+- Windows 11 Enterprise Evaluation (VM)
+- Hyper-V (Gen 2 VM)
 - Microsoft Entra ID (Azure AD)
-- Microsoft Intune
-- Microsoft 365 Business Premium
-- Microsoft Edge (Enterprise)
+- Microsoft Intune (Endpoint Manager)
+- Microsoft 365 Business Premium (license)
+
+## Architecture (high level)
+**Hyper-V VM** → **Entra ID Join** → **Intune MDM Enrollment** → **App Deployment (Edge)** → **Validation (edge://policy + Intune status)**
 
 ---
 
-## Lab Architecture
-- Host: Windows 10/11 with Hyper-V enabled
-- Guest VM: Windows 11 (Generation 2)
-- Identity: Microsoft Entra ID (Cloud-only)
-- Device Management: Microsoft Intune (MDM)
-- Application Deployment: Intune Windows app (Microsoft Edge)
+# Step-by-step Implementation
+
+## 1. Hyper-V VM Build (Windows 11 Requirements)
+**Key actions**
+- Created Generation 2 VM
+- Enabled Secure Boot
+- Enabled TPM 2.0 (virtual TPM)
+
+**Evidence**
+- ![Windows 11 setup TPM requirement](Screenshot%202025-12-09%20211357.png)
 
 ---
 
-## Implementation Summary
-
-### 1. Windows 11 VM Deployment
-- Created a Generation 2 Hyper-V virtual machine
-- Enabled TPM and Secure Boot
-- Installed Windows 11 successfully
-
-### 2. Microsoft Entra ID & Intune Configuration
-- Assigned Microsoft 365 Business Premium license
-- Enabled MDM user scope = **All**
+## 2. Entra ID + Intune Tenant Configuration
+**Key actions**
 - Verified Intune tenant status
-- Resolved enrollment error **0x80180018** by correcting license assignment
+- Confirmed MDM user scope = **All**
+- Confirmed Intune license assignment for enrollment user
 
-### 3. Device Enrollment
-- Connected VM to **Work or School account**
-- Successfully joined Microsoft Entra ID
-- Device appeared in Intune portal
-- Verified MDM connection on the VM
-
-### 4. Application Deployment (Microsoft Edge)
-- Added **Microsoft Edge for Windows 10 and later** via Intune
-- Assigned application as **Required**
-- Synced device from Intune
-- Verified Edge presence and policy status using:
-  - `edge://policy`
+**Evidence**
+- ![Tenant status in Intune](Screenshot%202025-12-13%20165701.png)
+- ![MDM user scope](Screenshot%202025-12-13%20175623.png)
 
 ---
 
-## Validation & Evidence
-- Device visible in Microsoft Intune
-- Device shows **Entra ID + MDM connected**
-- Microsoft Edge assigned successfully
-- Edge policies visible on the VM
+## 3. Device Enrollment (Windows 11 VM → Intune)
+**Key actions**
+- Connected the VM to Work or School account (Entra ID join)
+- Enrolled into Intune (MDM connected)
+
+**Troubleshooting**
+- Hit enrollment issue: `0x80180018`
+- Fixed by correcting license assignment to the enrolling user
+- Enrollment succeeded after license + MDM user scope were correct
+
+**Evidence**
+- ![Access work or school shows Entra ID and MDM connected](Screenshot%202025-12-13%20182540.png)
 
 ---
 
-## Skills Demonstrated
-- Windows 11 virtualization with Hyper-V
-- Microsoft Entra ID device join
-- Microsoft Intune MDM configuration
-- Troubleshooting Intune enrollment errors
-- Application deployment via Intune
-- Policy verification and validation
-- Enterprise endpoint management fundamentals
+## 4. Application Deployment (Microsoft Edge)
+**Key actions**
+- Added **Microsoft Edge for Windows 10 and later** in Intune Apps
+- Assigned deployment as **Required** to the device/user group
+- Forced sync from device
+
+**Evidence**
+- ![Edge app properties and assignments](Screenshot%202025-12-14%20093236.png)
+- ![Edge policy verification page](Screenshot%202025-12-14%20095116.png)
 
 ---
 
-## Screenshots & Evidence
-
-> Screenshots are stored in this directory and referenced as evidence of successful deployment, enrollment, and policy application.
->## Troubleshooting & Lessons Learned
-
-### Issue: Intune Enrollment Error (0x80180018)
-**Symptoms**
-- Device failed to enroll into Intune
-- Error displayed during Work or School account connection
-
-**Root Cause**
-- Microsoft Intune license was assigned to the wrong user
-
-**Resolution**
-- Reassigned Microsoft 365 Business Premium license to the enrolling user
-- Confirmed MDM user scope set to **All**
-- Re-initiated device enrollment
-
-**Outcome**
-- Device successfully enrolled
-- MDM status confirmed in Intune
-
-> 
+# Validation & Evidence
+✅ Device appears in Intune  
+✅ Device shows Entra ID + MDM connected  
+✅ Microsoft Edge deployment assigned successfully  
+✅ Policy and management verified using:
+- `edge://policy`
 
 ---
 
-## Notes
-This lab was created as part of my IT portfolio to demonstrate hands-on experience with modern endpoint management and cloud identity solutions.
+# Troubleshooting Notes (What I learned)
+## Error: 0x80180018 (Enrollment failed / Server error)
+**Likely causes**
+- Missing Intune license for the enrolling user
+- MDM user scope not enabled
+- Enrollment restrictions blocking Windows
+
+**Fix used**
+- Assigned valid license to the enrolling user
+- Confirmed **MDM user scope = All**
+- Retried enrollment → succeeded
+
+---
+
+## Next Improvements
+- Deploy a Win32 app (7-Zip or Notepad++)
+- Add a Compliance Policy (BitLocker/Password/Firewall)
+- Add a Configuration Profile (Edge settings, OneDrive KFM, etc.)
+- Add Conditional Access policy (require compliant device)
+
