@@ -104,3 +104,11 @@ Organizations use Intune + Entra ID to control devices, deploy apps, enforce pol
 - Add a Configuration Profile (Edge settings, OneDrive KFM, etc.)
 - Add Conditional Access policy (require compliant device)
 
+- ### Troubleshooting workflow used
+1. Confirm user licensing (M365/Intune)
+2. Confirm MDM user scope enabled
+3. Check device join state (Entra ID joined)
+4. Retry enrollment + sync
+5. Validate with Intune portal + device status screens
+
+
