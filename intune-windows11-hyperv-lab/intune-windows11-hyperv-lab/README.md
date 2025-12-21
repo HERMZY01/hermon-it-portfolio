@@ -87,6 +87,26 @@ The project was built to showcase real-world endpoint management skills, includi
 ## Screenshots & Evidence
 
 > Screenshots are stored in this directory and referenced as evidence of successful deployment, enrollment, and policy application.
+>## Troubleshooting & Lessons Learned
+
+### Issue: Intune Enrollment Error (0x80180018)
+**Symptoms**
+- Device failed to enroll into Intune
+- Error displayed during Work or School account connection
+
+**Root Cause**
+- Microsoft Intune license was assigned to the wrong user
+
+**Resolution**
+- Reassigned Microsoft 365 Business Premium license to the enrolling user
+- Confirmed MDM user scope set to **All**
+- Re-initiated device enrollment
+
+**Outcome**
+- Device successfully enrolled
+- MDM status confirmed in Intune
+
+> 
 
 ---
 
