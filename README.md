@@ -1,51 +1,143 @@
-👋 Hi, I’m Hermon — Modern Workplace & IT Support Engineer (Career Transitioner)
+# 👋 Hi, I'm Hermon Browne
 
-I’m transitioning into IT with a strong focus on Microsoft 365, Windows administration, troubleshooting, and automation.
-This portfolio showcases my hands-on lab work, configurations, and projects that demonstrate real-world IT skills.
+💻 IT Support Engineer | Microsoft 365 | Intune | Windows Server | PowerShell  
 
-🎓 Certifications
+I am a hands-on IT professional transitioning into a full-time role in IT Support and Microsoft 365 administration.  
+My focus is on building real-world skills through practical labs, system configurations, and automation projects.
 
-Microsoft MD-102 – Endpoint Administrator
+This GitHub portfolio demonstrates my ability to configure, manage, and troubleshoot modern IT environments using Microsoft technologies.
 
-Microsoft MS-102 – Microsoft 365 Administrator
+---
 
-Microsoft MS-900 – Fundamentals (resit planned)
+## 🎯 Core Skills
 
-CompTIA ITF+
+- Microsoft 365 Administration (Users, Groups, Security, Licensing)
+- Intune Endpoint Management (Compliance Policies, Configuration Profiles)
+- Windows 10/11 Support & Troubleshooting
+- Windows Server (Active Directory, DNS, DHCP, Group Policy)
+- PowerShell Automation (User management, reporting, admin tasks)
+- Security & Compliance (MFA, BitLocker, Conditional Access)
 
-💻 What I’m Currently Focused On
+---
 
-Microsoft 365 Administration
+## 🎓 Certifications
 
-Intune Endpoint Management
+- ✅ Microsoft MD-102 – Endpoint Administrator  
+- ✅ Microsoft MS-102 – Microsoft 365 Administrator  
+- 🔄 Microsoft MS-900 – Fundamentals (resit in progress)  
+- ✅ CompTIA ITF+  
 
-Windows 10/11 Support
+---
 
-Active Directory & Windows Server
+## 🧪 Featured Projects
 
-PowerShell for automation
+### 🔧 Microsoft 365 Tenant Setup
+Built and configured a full Microsoft 365 tenant environment from scratch.
 
-Security Hardening & Compliance
+**What I implemented:**
+- User and group management
+- Multi-Factor Authentication (MFA)
+- Security and compliance settings
+- Mail flow configuration
 
-🧪 My HomeLab Projects
+**Skills demonstrated:**
+M365 Administration, Security Configuration, Identity Management
 
-This portfolio shows practical experience through lab work, documentation, and automation.
+---
 
-Project	Description
-M365 Tenant Setup	Full tenant build: MFA, security policies, groups, mailflow rules
-Intune Endpoint Management	Compliance policies, Autopilot, configuration profiles
-Windows Server HomeLab	AD DS, DNS, DHCP, GPO, domain joins
-PowerShell Automation	Scripts for user management, license reporting, troubleshooting
-IT Support Playbooks	Real troubleshooting workflows and support procedures
-Security Baseline	CA rules, BitLocker, Windows security configs, hardening
-🚀 My Goals
+### 📱 Intune Endpoint Management
+Configured and managed devices using Microsoft Intune.
 
-Secure a role in IT Support, Microsoft 365, or Service Desk
+**What I implemented:**
+- Compliance policies for Windows devices
+- Configuration profiles
+- Device enrollment and management
+- Policy assignment and monitoring
 
-Continue improving PowerShell and automation skills
+**Skills demonstrated:**
+Endpoint Management, Intune Administration, Device Security
 
-Gain deeper experience with enterprise M365 and Intune environments
+---
 
-📫 Contact
+### 🖥️ Windows Server HomeLab
+Built a Windows Server environment using virtualization.
 
-https://www.linkedin.com/in/hermz100/
+**What I implemented:**
+- Active Directory Domain Services (AD DS)
+- DNS and DHCP configuration
+- Group Policy Objects (GPO)
+- Domain join for client machines
+
+**Skills demonstrated:**
+Windows Server Administration, Networking, Identity Management
+
+---
+
+### ⚡ PowerShell Automation
+Developed scripts to automate administrative tasks.
+
+**Examples:**
+- User account creation scripts
+- License reporting
+- Basic troubleshooting automation
+
+**Skills demonstrated:**
+Automation, Scripting, Efficiency in IT Operations
+
+---
+
+### 🛠️ IT Support Playbooks
+Created structured troubleshooting guides based on real-world IT support scenarios.
+
+**Examples:**
+- Password reset procedures
+- Device troubleshooting workflows
+- User support processes
+
+**Skills demonstrated:**
+Troubleshooting, Documentation, Service Desk Readiness
+
+---
+
+### 🔐 Security Baseline Implementation
+Configured security controls to harden systems.
+
+**What I implemented:**
+- BitLocker encryption
+- Compliance policies
+- Secure configuration settings
+
+**Skills demonstrated:**
+Security Best Practices, Endpoint Protection, Risk Reduction
+
+---
+
+## 🚀 What I’m Working On
+
+- Expanding PowerShell automation projects  
+- Deepening Microsoft 365 and Intune expertise  
+- Building more real-world troubleshooting scenarios  
+- Preparing for MS-900 certification  
+
+---
+
+## 🎯 Career Goal
+
+To secure a role in:
+- IT Support / Service Desk  
+- Microsoft 365 Administration  
+- Desktop / Endpoint Support  
+
+Where I can apply hands-on lab experience, strong troubleshooting ability, and a proactive approach to learning.
+
+---
+
+## 📫 Connect With Me
+
+- LinkedIn: https://www.linkedin.com/in/hermz100/
+
+---
+
+## 💡 About This Portfolio
+
+This is not just theory — every project here is built, tested, and documented to reflect real IT tasks performed in modern workplace environments.
