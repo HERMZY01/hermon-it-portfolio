@@ -24,7 +24,7 @@ This GitHub portfolio demonstrates my ability to configure, manage, and troubles
 
 - ✅ Microsoft MD-102 – Endpoint Administrator  
 - ✅ Microsoft MS-102 – Microsoft 365 Administrator  
-- 🔄 Microsoft MS-900 – Fundamentals (resit in progress)  
+- 🔄 Microsoft AB-900 – Fundamentals (resit in progress)  
 - ✅ CompTIA ITF+  
 
 ---
