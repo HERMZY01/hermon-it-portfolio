@@ -5,6 +5,10 @@
 The purpose of this lab was to configure and manage Windows devices using Microsoft Intune, simulating real-world endpoint management in a modern workplace environment.
 
 This includes device enrollment, compliance policies, configuration profiles, and ongoing monitoring of managed endpoints.
+## 🧩 Scenario
+
+A company needs to manage remote Windows devices securely.  
+As an IT Administrator, I was responsible for enrolling devices, enforcing compliance policies, and ensuring devices meet organisational security standards.
 
 ---
 
