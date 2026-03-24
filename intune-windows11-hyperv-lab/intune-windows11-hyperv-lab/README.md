@@ -2,7 +2,11 @@
 # Intune + Windows 11 + Hyper-V Lab
 
 ## Overview
-This lab demonstrates how to deploy a Windows 11 VM in Hyper-V, join it to Microsoft Entra ID, enroll it into Microsoft Intune (MDM), and deploy Microsoft Edge via Intune.
+### Windows 11 VM Created in Hyper-V
+
+![Hyper-V VM](hyperv-windows11-vm-created.png)
+
+This screenshot shows the successful creation of a Windows 11 virtual machine in Hyper-V, used as the test device for Intune enrollment and policy validation.
 
 ## Why this matters (real-world relevance)
 Organizations use Intune + Entra ID to control devices, deploy apps, enforce policies, and validate compliance. This lab mirrors a typical onboarding + management workflow used in modern IT teams.
