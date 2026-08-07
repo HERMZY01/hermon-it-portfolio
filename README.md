@@ -2,10 +2,7 @@
 
 💻 IT Support Engineer | Microsoft 365 | Intune | Windows Server | PowerShell  
 
-I am a hands-on IT professional transitioning into a full-time role in IT Support and Microsoft 365 administration.  
-My focus is on building real-world skills through practical labs, system configurations, and automation projects.
-
-This GitHub portfolio demonstrates my ability to configure, manage, and troubleshoot modern IT environments using Microsoft technologies.
+"This GitHub portfolio demonstrates my ability to configure..." to "This repository serves as a technical showcase of production-ready architecture..."
 
 ---
 
