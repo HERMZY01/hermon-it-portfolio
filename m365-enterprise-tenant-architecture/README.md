@@ -1,4 +1,4 @@
-#m365-enterprise-tenant-architecture
+# m365-enterprise-tenant-architecture
 
 ## Overview
 A full Microsoft 365 tenant configuration demonstrating core admin skills.
