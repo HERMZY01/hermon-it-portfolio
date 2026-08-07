@@ -1,4 +1,4 @@
-# Microsoft 365 Tenant Setup Project
+#m365-enterprise-tenant-architecture
 
 ## Overview
 A full Microsoft 365 tenant configuration demonstrating core admin skills.
